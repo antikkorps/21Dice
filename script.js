@@ -10,6 +10,8 @@ const diceEl = document.querySelector('.dice');
 const btnNew = document.querySelector('.btn--new');
 const btnRoll = document.querySelector('.btn--roll');
 const btnHold = document.querySelector('.btn--hold');
+const message0 = document.querySelector('.message--0');
+const message1 = document.querySelector('.message--1');
 
 let scores, currentScore, activePlayer, playing;
 //starting conditions
@@ -29,6 +31,8 @@ const init = function () {
   player1el.classList.remove('player--winner');
   player0el.classList.add('player--active');
   player1el.classList.remove('player--active');
+  message0.classList.add('hidden');
+  message1.classList.add('hidden');
 };
 init();
 
@@ -84,6 +88,10 @@ btnHold.addEventListener('click', function () {
     document
       .querySelector(`.player--${activePlayer}`)
       .classList.remove('player--active');
+    //make the winning message visible
+    document
+      .querySelector(`.message--${activePlayer}`)
+      .classList.remove('hidden');
   }
   //switch players
   switchPlayer();

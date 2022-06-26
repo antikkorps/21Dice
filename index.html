@@ -4,14 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
     <title>Jeu de dés</title>
+    <meta
+      name="description"
+      content="Un jeu de dés simple réalisé en Javascript avec le framework Bootstrap."
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap-grid.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
       <section class="player player--0 player--active">
         <h2 class="name" id="name--0">Joueur 1</h2>
         <p class="score" id="score--0">43</p>
+        <div class="message-victory">
+          <h2 class="message--0 hidden" id="message--0">
+            Bravo tu as gagné!!!
+          </h2>
+        </div>
         <div class="current">
           <p class="current-label">Score du tour</p>
           <p class="current-score" id="current--0">0</p>
@@ -20,6 +33,11 @@
       <section class="player player--1">
         <h2 class="name" id="name--1">Joueur 2</h2>
         <p class="score" id="score--1">24</p>
+        <div class="message-victory">
+          <h2 class="message--1 hidden" id="message--1">
+            Bravo tu as gagné!!!
+          </h2>
+        </div>
         <div class="current">
           <p class="current-label">Score du tour</p>
           <p class="current-score" id="current--1">0</p>
