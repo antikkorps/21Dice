@@ -11,14 +11,14 @@
     />
     <link
       rel="stylesheet"
-      href="./node_modules/bootstrap/dist/css/bootstrap-grid.min.css"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
       <section class="player player--0 player--active">
-        <h2 class="name" id="name--0">Joueur 1</h2>
+        <h2 class="display-2 name" id="name--0">Joueur 1</h2>
         <p class="score" id="score--0">43</p>
         <div class="message-victory">
           <h2 class="message--0 hidden" id="message--0">
@@ -31,7 +31,7 @@
         </div>
       </section>
       <section class="player player--1">
-        <h2 class="name" id="name--1">Joueur 2</h2>
+        <h2 class="display-2 name" id="name--1">Joueur 2</h2>
         <p class="score" id="score--1">24</p>
         <div class="message-victory">
           <h2 class="message--1 hidden" id="message--1">
@@ -44,10 +44,31 @@
         </div>
       </section>
 
-      <img src="dice-5.png" alt="Playing dice" class="dice" />
-      <button class="btn btn--new">🔄 Nouvelle partie</button>
-      <button class="btn btn--roll">🎲 Lance le dés</button>
-      <button class="btn btn--hold">📥 Sauve le score</button>
+      <img src="./images/dice-5.png" alt="Playing dice" class="dice" />
+      <button class="btn btn--new">
+        <img
+          src="/node_modules/bootstrap-icons/icons/plus-circle.svg"
+          alt="plus-circle image"
+          class="icons"
+        />
+        Nouvelle partie
+      </button>
+      <button class="btn btn--roll">
+        <img
+          src="/node_modules/bootstrap-icons/icons/arrow-repeat.svg"
+          alt="plus-circle image"
+          class="icons"
+        />
+        Lance le dés
+      </button>
+      <button class="btn btn--hold">
+        <img
+          src="/node_modules/bootstrap-icons/icons/box-arrow-in-down.svg"
+          alt="plus-circle image"
+          class="icons"
+        />
+        Sauve le score
+      </button>
     </main>
     <script src="./script.js"></script>
   </body>
